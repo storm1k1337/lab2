@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Лабораторна робота №2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+   
+    <style>
+        #check {
+            position: absolute;
+            background: rgb(193, 255, 136);
+            top: 250px;
+            left: 10px;
+        }
+
+        label{
+            padding-left: 5px;
+        }
+
+        input:checked+label{
+            background-color: rgb(255, 174, 0);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box"><b>Я ТРЕТИЙ</b></div>
+        <div class="box1"><b>Я ЧЕТВЕРТЫЙ</b></div>
+        <div class="box2"><b>Я ПЕРВЫЙ</b></div>
+        <div class="box3"><b>Я ВТОРОЙ</b></div>
+    </div>
+
+    <div id="check">
+        <p><font color="blue">Выберите вариант ответа</font></p>
+        <input type="radio" name="rd"/> <label>1</label><br>
+        <input type="radio" name="rd"/> <label>2</label><br>
+       <input type="radio" checked name="rd"/>  <label>3</label><br>
+    </div>
+</body>
+
+</html>
